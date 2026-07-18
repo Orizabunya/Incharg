@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>เข้าสู่ระบบจ่ายงาน (หัวหน้าเวร)</title>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@600&family=Sarabun&display=swap" rel="stylesheet">
+<style>
+  body{font-family:'Sarabun',sans-serif;background:#F5F7F5;color:#17242A;
+    display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0}
+  .card{background:#fff;border:1px solid #D4DBD9;border-top:5px solid #0E7C7B;
+    border-radius:10px;padding:34px 30px;max-width:420px;text-align:center}
+  h1{font-family:'Prompt',sans-serif;font-size:1.1rem;color:#0B6362;margin:0 0 10px}
+  p{color:#5C6B6A;font-size:.92rem;margin:0 0 18px}
+  a.btn{display:inline-block;font-family:'Prompt',sans-serif;font-weight:600;
+    background:#0E7C7B;color:#fff;text-decoration:none;padding:11px 26px;border-radius:8px}
+</style>
+<script>
+/* ⚙️ วาง URL ของ Web App (Apps Script) ที่นี่ — ลงท้ายด้วย /exec */
+const APP_URL = 'https://script.google.com/macros/s/XXXXXXXXXXXX/exec';
+if(!APP_URL.includes('XXXX')) location.replace(APP_URL);
+</script>
+</head>
+<body>
+<div class="card">
+  <h1>ระบบจ่ายงาน หอผู้ป่วยเฉลิมพระเกียรติ 7 ใต้</h1>
+  <p>สำหรับหัวหน้าเวร (จ่ายงาน/แก้ไข/ปิดวัน/สถิติ)<br>
+  กำลังพาไปยังระบบ… หากไม่ไปอัตโนมัติ กดปุ่มด้านล่าง</p>
+  <a class="btn" href="#" onclick="location.href=APP_URL;return false;">เข้าสู่ระบบจ่ายงาน →</a>
+  <p style="margin-top:16px;font-size:.8rem">(ผู้ดูแล: เปิดไฟล์นี้แล้ววาง URL ของ Web App ในบรรทัด APP_URL)</p>
+</div>
+</body>
+</html>
